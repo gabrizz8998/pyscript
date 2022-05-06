@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+       - matplotlib
+    </py-env>
+</head>
+<body>
+<!-- </div>
+    <py-script>
+print("Hola mundo")
+console.log("Hola mundo")
+import matplotlib.pyplot as plt
+ 
+## Declaramos valores para el eje x
+eje_x = ['Python', 'R', 'Node.js', 'PHP']
+ 
+## Declaramos valores para el eje y
+eje_y = [50,20,35,47]
+ 
+## Creamos Gráfica
+plt.bar(eje_x, eje_y)
+ 
+## Legenda en el eje y
+plt.ylabel('Cantidad de usuarios')
+ 
+## Legenda en el eje x
+plt.xlabel('Lenguajes de programación')
+ 
+## Título de Gráfica
+plt.title('Usuarios de lenguajes de programación')
+ 
+## Mostramos Gráfica
+plt
+</py-script>
+<div> -->
+<input type="text" id="test" value="valor prueba" style="background-color: red;">
+<input type="text" id="test2" value="valor test2" style="background-color: green;">
+<div>
+    <!-- <py-script>
+plt.clf()
+import matplotlib.pyplot as plt
+manzanas = [20,10,25,30]
+nombres = ["Ana","Juan","Diana","Catalina"]
+plt.pie(manzanas, labels=nombres)
+plt
+alert("Hola mundo")
+    </py-script> -->
+</div>
+<py-script>
+from js import document
+def test(element):
+    console.log("Hola mundo")
+    console.log(element)
+    console.log("Id del elemento",element.target.attributes.id.nodeValue)
+
+inputTest = document.getElementById('test')
+
+print(inputTest.value)
+inputTest.value = "Hola mundo"
+el=Element('test')
+el.clear
+el.element.onclick=test
+
+inp=Element('test2')
+print(inp.element.id)
+
+</py-script>
+
+</body>
+</html>
